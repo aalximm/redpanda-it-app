@@ -1,0 +1,36 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	gap: 10px;
+	padding: 20px;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.logoWrapper {
+	background: linear-gradient(to top, var(--violet), var(--black));
+	border-radius: 50%;
+	padding: 2px;
+}
+
+.title {
+	width: 100%;
+	justify-self: center;
+	text-align: center;
+}
+
+.categories {
+	justify-self: center;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	
+}

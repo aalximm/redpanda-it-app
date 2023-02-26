@@ -1,0 +1,19 @@
+.button {
+	padding: 5px 10px;
+	border: 1px solid var(--violet);
+	border-radius: 7px;
+	box-shadow: 0px 0px 5px var(--violet);
+	background: var(--black);
+	color: var(--violet);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	transition: ease-in 0.2s;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 10px var(--primary);
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	cursor: pointer;
+}

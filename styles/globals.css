@@ -1,0 +1,18 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+	background: var(--black);
+	color: var(--white);
+}
+
+:root {
+	--black: #0E0613;
+	--violet-dark: #33122A;
+	--violet: #82204B;
+	--primary: #e06148;
+	--primary-dark: #871522;
+	--white: #f4f8ea;
+}
+
