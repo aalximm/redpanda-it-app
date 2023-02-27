@@ -1,8 +1,8 @@
-import { Button, H, P } from "@/components/LowLevelComponents";
+import { Button, H, Input, P } from "@/components/LowLevelComponents";
 import { Card } from "@/components/LowLevelComponents";
 import { about, clients, services } from "@/constants/text.constants";
 import { withLayout } from "@/layout/Layout";
-import { ServicesComponent } from '@/components/HighLevelComponents';
+import { ContactUsComponent, ServicesComponent } from '@/components/HighLevelComponents';
 
 
 function Home() {
@@ -17,6 +17,7 @@ function Home() {
 				<H tag='h1'>Clients</H>
 				<P>{clients}</P>
 			</Card>
+			<ContactUsComponent />
 		</>
 	)
 }

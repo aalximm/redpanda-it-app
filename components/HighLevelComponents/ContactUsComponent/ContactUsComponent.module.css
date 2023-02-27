@@ -1,0 +1,44 @@
+.wrapper {
+	gap: 20px;
+}
+
+.content {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 20px;
+	grid-template-areas: 
+	". name contact ."
+	". text text ."
+	". button button .";
+
+}
+
+.textarea {
+	grid-area: text;
+}
+
+.name {
+	grid-area: name;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.button {
+	grid-area: button;
+}
+
+.button {
+	width: 50%;
+	justify-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.content {
+		grid-template-columns: 1fr;
+	}
+
+}

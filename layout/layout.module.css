@@ -10,3 +10,15 @@
 .footer {
 	align-self: center;
 }
+
+.header {
+	position: fixed;
+	width: 100%;
+	background: var(--black);
+	border-bottom: 1px solid var(--primary);
+	z-index: 10;
+}
+
+.body {
+	margin-top: 100px;
+}

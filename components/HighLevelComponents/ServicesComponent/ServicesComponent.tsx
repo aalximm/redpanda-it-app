@@ -2,8 +2,6 @@
 import { ServicesComponentProps } from './ServicesComponent.props';
 import styles from './ServicesComponent.module.css';
 import cn from 'classnames';
-import { ForwardedRef, forwardRef } from 'react';
-import { Cardo } from 'next/font/google';
 import { Card, H, P } from '@/components/LowLevelComponents';
 import { services } from '@/constants/text.constants';
 

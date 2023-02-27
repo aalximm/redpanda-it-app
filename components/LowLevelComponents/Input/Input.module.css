@@ -1,20 +1,52 @@
 .input {
 	padding: 7px 15px;
+	width: calc(100% - 30px);
+	position: relative;
 
-	color: var(--black);
+
+	color: var(--primary);
 	border: none;
-	outline-color: var(--primary);
-	background-color: var(--white);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-	border-radius: 5px;
+	outline: none;
+	border-bottom: 1px solid var(--violet);
+	border-radius: 10px;
+	box-shadow: 0px 1px 4px var(--violet);
+	background-color: var(--black);
 
 	font-size: 16px;
 	line-height: 22px;
 	font-family: var(--font-family);
+
+	transition: 0.2s ease-in;
 }
 
-.input::placeholder {
-	color: var(--gray);
+.placeholder {
+	position: absolute;
+	left: 16px;
+	bottom: -5px;
+
+	font-size: 15px;
+	white-space: nowrap;
+	color: var(--primary);
+	text-shadow: none;
+	pointer-events: none;
+
+
+	transition: 0.2s ease-in;
+}
+
+.input:focus ~ .placeholder,
+.filled ~ .placeholder{
+	color: var(--violet);
+
+	left: 13px;
+	bottom: 25px;
+}
+
+.input:focus{
+	box-shadow: 0px 0px 10px var(--primary);
+	border-radius: 10px;
+	border-bottom: 1px solid var(--primary);
+	color: var(--primary);
 }
 
 .error {
