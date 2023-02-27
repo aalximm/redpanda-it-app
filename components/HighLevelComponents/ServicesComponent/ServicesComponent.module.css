@@ -1,0 +1,13 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	justify-items: stretch;
+}
+
+@media screen and (max-width: 1000px) {
+	.content {
+		grid-template-columns: 1fr;
+	}
+
+}

@@ -1,0 +1,24 @@
+/* eslint-disable react/display-name */
+import { ServicesComponentProps } from './ServicesComponent.props';
+import styles from './ServicesComponent.module.css';
+import cn from 'classnames';
+import { ForwardedRef, forwardRef } from 'react';
+import { Cardo } from 'next/font/google';
+import { Card, H, P } from '@/components/LowLevelComponents';
+import { services } from '@/constants/text.constants';
+
+export const ServicesComponent = ({ className, ...props }: ServicesComponentProps): JSX.Element => {
+	return (
+		<Card className={cn(className, styles.wrapper)}>
+			<H tag='h1'>Services</H>
+			<div className={styles.content}>
+				{services.map(service => (
+					<div key={service.name} className={styles.item}>
+						<H tag="h2">{service.name}</H>
+						<P>{service.description}</P>
+					</div>
+				))}
+			</div>
+		</Card>
+	);
+}; 

@@ -4,15 +4,20 @@ body {
     padding: 0;
 
 	background: var(--black);
-	color: var(--white);
+	
+	color: var(--primary);
+	text-shadow: 0px 0px 3px var(--primary-shadow), 0 0 4px var(--violet-dark);
 }
 
 :root {
 	--black: #0E0613;
+	--black-alt: #524e54;
 	--violet-dark: #33122A;
 	--violet: #82204B;
 	--primary: #e06148;
+	--primary-shadow: #e06148b6;
 	--primary-dark: #871522;
 	--white: #f4f8ea;
+	--white-shadow: #f4f8ea7e;
 }
 

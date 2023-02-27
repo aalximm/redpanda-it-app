@@ -1,14 +1,24 @@
-import { Button, H, P } from "@/components/";
+import { Button, H, P } from "@/components/LowLevelComponents";
+import { Card } from "@/components/LowLevelComponents";
+import { about, clients, services } from "@/constants/text.constants";
+import { withLayout } from "@/layout/Layout";
+import { ServicesComponent } from '@/components/HighLevelComponents';
 
 
-export default function Home() {
+function Home() {
 	return (
 		<>
-			<H tag="h1">Hello its h1</H>
-			<H tag="h2">Hello its h2</H>
-			<H tag="h3">Hello its h3</H>
-			<P>Its p</P>
-			<Button>And this is button</Button>
+			<Card >
+				<H tag='h1'>About</H>
+				<P>{about}</P>
+			</Card>
+			<ServicesComponent />
+			<Card>
+				<H tag='h1'>Clients</H>
+				<P>{clients}</P>
+			</Card>
 		</>
 	)
 }
+
+export default withLayout(Home);

@@ -15,11 +15,3 @@
 	font-size: 20px;
 	line-height: 27px;
 }
-
-.h1,
-.h2,
-.h3 {
-	color: var(--primary);
-	text-shadow: 0 0 1px var(--primary), 0 0 4px var(--violet);
-	align-items: center;
-}
