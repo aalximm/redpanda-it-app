@@ -5,9 +5,9 @@ import cn from 'classnames';
 import { Card, H, P } from '@/components/LowLevelComponents';
 import { services } from '@/constants/text.constants';
 
-export const ServicesComponent = ({ className, ...props }: ServicesComponentProps): JSX.Element => {
+export const ServicesComponent = ({ category, className, ...props }: ServicesComponentProps): JSX.Element => {
 	return (
-		<Card className={cn(className, styles.wrapper)}>
+		<Card className={cn(className, styles.wrapper)} category={category}>
 			<H tag='h1'>Services</H>
 			<div className={styles.content}>
 				{services.map(service => (

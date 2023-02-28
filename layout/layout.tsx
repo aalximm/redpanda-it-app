@@ -15,9 +15,6 @@ function Layout({ children }: LayoutProps) {
 			<div className={styles.body}>
 				{children}
 			</div>
-			<div className={styles.footer}>
-				<H tag='h3'>This is footer</H>
-			</div>
 		</div>
 	);
 }

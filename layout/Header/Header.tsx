@@ -9,7 +9,7 @@ import { NavigationCategories } from '@/interfaces/interfaces';
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 
 	return (
-		<div className={cn(className, styles.wrapper)}>
+		<div className={cn(className, styles.wrapper)} {...props}>
 			<div className={styles.logoWrapper}>
 				<Image
 					src={logo}
@@ -17,7 +17,10 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 					className={styles.logo}
 				/>
 			</div>
-			<H tag='h1' className={styles.title}>Panda International Team</H>
+			<div className={styles.titleWrapper}>
+				<H tag='h1' className={styles.title}>Panda International Team</H>
+				<p className={styles.motto}>a posse ad esse</p>
+			</div>
 			<div className={styles.categories}>
 				<PageLink category={NavigationCategories.About}>About</PageLink>
 				<PageLink category={NavigationCategories.Services}>Services</PageLink>

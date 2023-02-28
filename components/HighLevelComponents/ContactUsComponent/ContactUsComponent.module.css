@@ -38,7 +38,12 @@
 
 @media screen and (max-width: 1000px) {
 	.content {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"name contact"
+		"text text"
+		"button button";
 	}
 
+	
 }

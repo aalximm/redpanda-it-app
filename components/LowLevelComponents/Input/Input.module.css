@@ -10,7 +10,7 @@
 	border-bottom: 1px solid var(--violet);
 	border-radius: 10px;
 	box-shadow: 0px 1px 4px var(--violet);
-	background-color: var(--black);
+	background: none;
 
 	font-size: 16px;
 	line-height: 22px;
@@ -36,6 +36,7 @@
 
 .input:focus ~ .placeholder,
 .filled ~ .placeholder{
+
 	color: var(--violet);
 
 	left: 13px;

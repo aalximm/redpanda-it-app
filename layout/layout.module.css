@@ -1,10 +1,8 @@
 .wrapper {
 	width: 100%;
-	min-height: 100vh;
 
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr 100px;
 }
 
 .footer {
@@ -14,11 +12,34 @@
 .header {
 	position: fixed;
 	width: 100%;
-	background: var(--black);
 	border-bottom: 1px solid var(--primary);
 	z-index: 10;
 }
 
+.header {
+	background: linear-gradient(-45deg, var(--violet-dark), var(--black), var(--gray));
+    background-size: 200% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .body {
 	margin-top: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		margin-top: 110px;
+	}
 }
