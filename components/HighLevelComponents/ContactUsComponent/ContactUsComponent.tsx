@@ -16,6 +16,7 @@ export const ContactUsComponent = ({ category, className, ...props }: ContactUsC
 	const onSubmit: SubmitHandler<IContactUsForm> = async (data) => {
 		console.log(process.env.NEXT_PUBLIC_HOST);
 		if (process.env.NEXT_PUBLIC_HOST) {
+			//TODO Убрать хардкод uri
 			const res = await axios.post(process.env.NEXT_PUBLIC_HOST + '/api/contact-us/notify', {
 				name: data.name,
 				email: data.email,
@@ -24,6 +25,7 @@ export const ContactUsComponent = ({ category, className, ...props }: ContactUsC
 			console.log(res.status);
 			if (res.status = 201) {
 				reset();
+				//TODO изменить сообщение об отправке, сделать валидацию формы
 				setValue('message', 'Your message has been sent successfully, our team will contact you shortly');
 			}
 		}
@@ -47,7 +49,3 @@ export const ContactUsComponent = ({ category, className, ...props }: ContactUsC
 		</Card>
 	);
 }; 
-
-// export const getStaticProps = async () => {
-// 	const host = process.env.HOST;
-// }
