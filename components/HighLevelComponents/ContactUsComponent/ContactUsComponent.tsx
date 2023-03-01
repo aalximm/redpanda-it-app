@@ -40,7 +40,7 @@ export const ContactUsComponent = ({ category, className, ...props }: ContactUsC
 					isFilled={watchName != ""}
 				/>
 				<Input className={styles.contact} {...register('email')}
-					placeholder='Your email/tg/WApp' title='Email'
+					placeholder='Your contact' title='Email'
 					isFilled={watchEmail != ""}
 				/>
 				<Textarea className={styles.textarea} {...register('message')} placeholder='Write your message here'/>

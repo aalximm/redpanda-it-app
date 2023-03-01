@@ -86,18 +86,31 @@
 
 @media screen and (max-width: 560px) {
 	.wrapper {
-		grid-template-columns: auto 1fr;
+		grid-template-columns: 1fr;
+		padding: 0;
 	}
 
 	.logoWrapper {
-		grid-row: 1 / 2;
+		display: none;
 	}
 
 	.categories {
 		grid-column: 1 / -1;
+		grid-template-columns: 1fr 1fr;
+		justify-self: center;
+		padding: 0;
+		padding-bottom: 10px;
+		gap: 10px;
+		width: 100%;
 	}
 
 	.titleWrapper {
+		display: grid;
+		white-space: normal;
 		align-self: center;
+	}
+
+	.title {
+		word-wrap: normal;
 	}
 }

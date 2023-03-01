@@ -34,8 +34,8 @@
 	transition: 0.2s ease-in;
 }
 
-.input:focus ~ .placeholder,
-.filled ~ .placeholder{
+.input:focus~.placeholder,
+.filled~.placeholder {
 
 	color: var(--violet);
 
@@ -43,7 +43,7 @@
 	bottom: 25px;
 }
 
-.input:focus{
+.input:focus {
 	box-shadow: 0px 0px 10px var(--primary);
 	border-radius: 10px;
 	border-bottom: 1px solid var(--primary);
@@ -64,4 +64,21 @@
 	bottom: -20px;
 	left: 5px;
 	color: var(--red);
+}
+
+@media screen and (max-width: 560px) {
+	.placeholder {
+		left: 10px;
+		max-width: 100px;
+		overflow-x: hidden;
+	}
+
+	.input:focus~.placeholder,
+	.filled~.placeholder {
+
+		color: var(--violet);
+
+		left: 10px;
+		bottom: 25px;
+	}
 }

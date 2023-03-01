@@ -45,5 +45,16 @@
 		"button button";
 	}
 
+}
+
+@media screen and (max-width: 560px) {
+	.wrapper {
+		padding: 10px;
+		gap: 20px;
+	}
 	
+	.content {
+		gap: 10px;
+	}
+
 }
