@@ -19,12 +19,12 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 			</div>
 			<div className={styles.titleWrapper}>
 				<H tag='h1' className={styles.title}>Panda International Team</H>
-				<p className={styles.motto}>a posse ad esse</p>
+				<p className={styles.motto}>from desire to reality</p>
 			</div>
 			<div className={styles.categories}>
 				<PageLink category={NavigationCategories.About}>About</PageLink>
 				<PageLink category={NavigationCategories.Services}>Services</PageLink>
-				<PageLink category={NavigationCategories.Clients}>Clients</PageLink>
+				<PageLink category={NavigationCategories.Advices}>Advices</PageLink>
 				<PageLink category={NavigationCategories.ContactUs}>Contact Us</PageLink>
 			</div>
 		</div>

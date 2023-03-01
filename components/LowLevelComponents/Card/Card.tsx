@@ -2,10 +2,10 @@
 import { CardProps } from './Card.props';
 import styles from './Card.module.css';
 import cn from 'classnames';
-import { ForwardedRef, forwardRef, useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { AppContext } from '@/context/app.context';
 
-export const Card = forwardRef(({ category, children, className, ...props }: CardProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+export const Card = ({ category, className, children, ...props }: CardProps): JSX.Element => {
 	const { focusedCategory } = useContext(AppContext);
 
 	const categoryRef = useRef<HTMLDivElement>(null);
@@ -22,4 +22,4 @@ export const Card = forwardRef(({ category, children, className, ...props }: Car
 			{children}
 		</div>
 	);
-}); 
+}; 

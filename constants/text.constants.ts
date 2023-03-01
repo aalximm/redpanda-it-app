@@ -1,27 +1,16 @@
-export const about = 'Pandas International Team is a software development company that sells its services to clients all over the world. We specialize in custom software development, and have experience working with large Russian banks.';
+export const about = 'We are IT team that specializes in providing various services for software development and testing. We work with a variety of businesses ranging from small legal services firms to large banks. We have a small but incredibly gifted team, including winners of international olympiads in the exact sciences. During development, we have the opportunity, if necessary, to consult with PhDs in various IT fields, including machine learning, networks and artificial intelligence.';
 
-export const services: Service[] = [
-	{
-		name:'Custom Development',
-		description: 'We offer custom software development services, tailored to meet the specific needs of your business.'
-	},
-	{
-		name: 'Mobile App Development',
-		description: 'We can help you create custom mobile apps for iOS and Android, with a focus on user experience and performance.'
-	},
-	{
-		name: 'Web Development',
-		description: 'We offer full-stack web development services, from design to deployment, to help you build your online presence.'
-	},
-	{
-		name: 'Cloud Computing',
-		description: 'We can help you take advantage of the benefits of cloud computing, with expert advice and implementation services.'
-	}
+export const services: string[] = [
+	"IT consulting",
+	"Web Application Development",
+	"Development of mobile applications for ios and android",
+	"Manual, automated and load testing of software",
+	"Desktop applications",
+	"Development of bots for messengers",
 ];
 
-export interface Service {
-	name: string;
-	description: string;
-}
-
-export const clients = 'We have worked with a number of large Russian banks, as well as many other clients from all over the world. Our goal is to provide high-quality software development services to all of our clients, no matter their size or industry.';
+export const advices: string[] = [
+	"Straighten your back or you will have scoliosis",
+	"Don't worry if it doesn't work. If everything always worked, we wouldn't have a job.",
+	"In theory, there is no difference between theory and practice. But in practice, it is"
+];

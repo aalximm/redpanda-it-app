@@ -7,14 +7,11 @@ import { services } from '@/constants/text.constants';
 
 export const ServicesComponent = ({ category, className, ...props }: ServicesComponentProps): JSX.Element => {
 	return (
-		<Card className={cn(className, styles.wrapper)} category={category}>
+		<Card className={cn(className, styles.wrapper)} category={category} {...props}>
 			<H tag='h1'>Services</H>
 			<div className={styles.content}>
 				{services.map(service => (
-					<div key={service.name} className={styles.item}>
-						<H tag="h2">{service.name}</H>
-						<P>{service.description}</P>
-					</div>
+					<P key={service} className={styles.service}>{service}</P>
 				))}
 			</div>
 		</Card>

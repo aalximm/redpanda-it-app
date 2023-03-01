@@ -5,6 +5,10 @@
 	justify-items: stretch;
 }
 
+.service {
+	text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
 	.content {
 		grid-template-columns: 1fr;
