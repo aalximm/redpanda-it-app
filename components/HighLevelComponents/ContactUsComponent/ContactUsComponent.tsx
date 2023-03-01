@@ -35,15 +35,22 @@ export const ContactUsComponent = ({ category, className, ...props }: ContactUsC
 		<Card className={cn(className, styles.wrapper)} category={category} {...props}>
 			<H tag='h1'>Contact Us</H>
 			<div className={styles.content}>
-				<Input className={styles.name} {...register('name')}
+				<Input className={styles.name}
+					{...register('name', {required: 'Input your name'})}
 					placeholder='Your name' title='Name'
 					isFilled={watchName != ""}
+					required={true}
 				/>
-				<Input className={styles.contact} {...register('email')}
+				<Input className={styles.contact}
+					{...register('email', {required: 'Input your contact'})}
 					placeholder='Your contact' title='Email'
 					isFilled={watchEmail != ""}
+					required={true}
 				/>
-				<Textarea className={styles.textarea} {...register('message')} placeholder='Write your message here'/>
+				<Textarea className={styles.textarea}
+					{...register('message', {required: 'Input your message'})}
+					placeholder='Write your message here'
+				/>
 				<Button className={styles.button} onClick={handleSubmit(onSubmit)}>Submit</Button>
 			</div>
 		</Card>
