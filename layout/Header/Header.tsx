@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import Image from 'next/image';
-import logo from '../logo.png';
+import logo from '../logo_legal.png';
 import { HeaderProps } from './Header.props';
 import { H, PageLink } from '@/components/LowLevelComponents';
 import cn from 'classnames';
